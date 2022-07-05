@@ -1,0 +1,134 @@
+.subscribe-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(90deg, #265b5c 0%, #11206b 100%);
+}
+
+.subscribe-main-title {
+  margin: 64px 0px 0px;
+  font-family: "Neue Haas Grotesk Text Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 50px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.subscribe-sub-title {
+  margin: 7.93px 0px 0px 0px;
+  font-family: "Neue Haas Grotesk Text Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #c4d3ea;
+  text-align: center;
+}
+
+.email-container {
+  margin: 28px 0px 64px 0px;
+  padding: 6px 6px 6px 32px;
+  gap: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #315b82;
+  border-radius: 12px;
+}
+
+.custom-input {
+  font-family: "Neue Haas Grotesk Text Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  color: #c4d3ea;
+  border: 0px;
+  background: transparent;
+}
+
+.custom-input:focus {
+  outline: none;
+}
+
+.custom-input::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #c4d3ea;
+}
+
+.custom-input:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #c4d3ea;
+}
+
+.custom-input::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #c4d3ea;
+}
+
+.subscribe-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding: 16px 36px;
+  gap: 10px;
+  width: 149px;
+  height: 52px;
+  background: linear-gradient(270deg, #1b4347 -1.39%, #3d906a 99.46%);
+  border-radius: 12px;
+  font-family: "Neue Haas Grotesk Text Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  align-items: center;
+  color: #ffffff;
+  border: transparent;
+}
+
+.mobile-btn {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .subscribe-main-title{
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 37px;
+    text-align: center;
+    margin-left: 33px;
+    margin-right: 33px;
+  }
+
+  .subscribe-sub-title {
+    font-family: Arial;
+    margin-left: 33px;
+    margin-right: 33px;
+  }
+
+  .email-container {
+    margin-left: 33px;
+    margin-right: 33px;
+    margin-bottom: 35px;
+    padding: 19px;
+  }
+
+  .mobile-btn {
+    display: block;
+    margin-bottom: 64px;
+  }
+
+  .desktop-btn {
+    display: none;
+  }
+}

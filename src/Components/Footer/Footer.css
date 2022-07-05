@@ -1,0 +1,153 @@
+.footer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #031222;
+  width: 100%;
+}
+
+.footer-main-container {
+  width: 100%;
+  padding: 0px 0px 51px 61px;
+}
+
+.footer-sub-container1 {
+  padding: 94px 95px 27px 104px;
+}
+
+.company-info-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.protocol-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  row-gap: 12px;
+}
+
+.company-info-title {
+  font-family: "Neue Haas Grotesk Text Pro";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: #ffffff;
+  margin: 0;
+}
+
+.company-info-subtitle {
+  margin: 0;
+  font-family: "Neue Haas Grotesk Text Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 24px;
+  color: #8493b5;
+}
+
+.copy-right {
+  margin: 0px 0px 14px 0px;
+  font-family: "Neue Haas Grotesk Text Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 24px;
+  color: #8493b5;
+}
+
+.mobile-copy-right {
+  display: none;
+}
+
+.custom-br {
+  width: 100%;
+  height: 1px;
+  background: #0f2945;
+}
+
+.footer-sub-container2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /*column-gap: 6px;*/
+}
+
+.footer-sub-container3 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  column-gap: 6px;
+}
+
+.latest-block {
+  font-family: "Neue Haas Grotesk Text Pro";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 11.6px;
+  line-height: 24px;
+  color: #8493b5;
+  margin: 0px;
+}
+
+.company-info-container1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+@media screen and (max-width: 768px) {
+  .footer-main-container{
+    padding: 65px 0px 15px 0px;
+  }
+
+  .footer-sub-container1 {
+    padding: 0;
+  }
+
+  .footer-sub-container2 {
+    padding: 12px 21px 0px;
+  }
+
+  .company-info-container{
+    flex-wrap: wrap;
+    row-gap: 2rem;
+    padding: 0px 21px 4rem;
+    border-bottom: 1px solid #0f2945;
+  }
+
+  .image-container {
+    width: 100%;
+  }
+
+  .pro-div {
+    width: 50%;
+  }
+
+  .gov-div {
+    width: 50%;
+  }
+
+  .app-button {
+    display: none;
+  }
+
+  .copy-right {
+    margin: 0px;
+  }
+
+  .desktop-copy-right {
+    display: none;
+  }
+
+  .mobile-copy-right {
+    display: block;
+  }
+
+  .custom-br {
+    margin-top: 4rem;
+  }
+}

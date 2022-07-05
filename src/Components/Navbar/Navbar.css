@@ -1,0 +1,238 @@
+.navbar-container {
+  background-image: url("../../../public/assets/bg.png");
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 106px 12px 106px;
+  margin-top: 19px;
+  background: transparent;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 8px;
+}
+
+.logo-title {
+  font-family: "PT Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18.7727px;
+  line-height: 21px;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+}
+
+.menu-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 1rem;
+}
+
+.menu-item {
+  text-decoration: none;
+  font-family: "Neue Haas Grotesk Text Pro";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  color: #ffffff;
+}
+
+.app-button {
+  width: 79px;
+  height: 47px;
+  border-radius: 4px;
+  background: linear-gradient(
+    93.58deg,
+    rgba(0, 77, 0, 0.33) 7.62%,
+    rgba(1, 48, 30, 0.33) 104.97%
+  );
+  font-family: "Neue Haas Grotesk Text Pro";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 24px;
+  letter-spacing: 0.09em;
+  color: #ffffff;
+  border: transparent;
+}
+
+.active-link {
+  color: #3555f7;
+}
+
+.hattom-title-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 7px;
+}
+
+.main-title {
+  margin: 0;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 80px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  text-shadow: 3px 4px 17px rgba(255, 255, 255, 0.2);
+}
+
+.sub-title {
+  margin: 0;
+  font-family: "Neue Haas Grotesk Text Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.02em;
+  background: linear-gradient(270deg, #367e6b -1.39%, #3d906a 99.46%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.toggle-button {
+  display: none;
+}
+
+.menu-container-mobile{
+  /*display: none;*/
+  position: absolute;
+  top: 77px;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+  background: #03173a;
+  height: 0;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 2rem;
+  padding: 1rem 0rem;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.25s;
+  -webkit-transition: all 0.25s;
+}
+
+.coin-image{
+  background-image: url("../../../public/assets/coin.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: 39%;
+  left: 46%;
+  width: 180px;
+  height: 226px;
+}
+
+.toggle-button.is-active .toggle-button-line:nth-child(2){
+  opacity: 0;
+}
+
+
+.toggle-button.is-active .toggle-button-line:nth-child(1){
+  -webkit-transform: translateY(8px) rotate(38deg);
+  -ms-transform: translateY(8px) rotate(38deg);
+  -o-transform: translateY(8px) rotate(38deg);
+  transform: translateY(8px) rotate(38deg);
+}
+
+
+.toggle-button.is-active .toggle-button-line:nth-child(3){
+  -webkit-transform: translateY(-8px) rotate(-38deg);
+  -ms-transform: translateY(-8px) rotate(-38deg);
+  -o-transform: translateY(-8px) rotate(-38deg);
+  transform: translateY(-8px) rotate(-38deg);
+}
+
+@media screen and (max-width: 768px) {
+  .navbar-container {
+    background-image: url("../../../public/assets/phone-bg-header.svg");
+  }
+  .main-title{
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 41.4134px;
+    line-height: 41px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+    text-shadow: 1.553px 2.07067px 8.80035px rgba(255, 255, 255, 0.2);
+  }
+  .sub-title {
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0.06em;
+    color: #3D906A;
+  }
+  .sub-title > span {
+    display: none;
+  }
+
+  .nav {
+    padding: 0px 1rem;
+  }
+
+  .toggle-button {
+    height: 24px;
+    width: 30px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .toggle-button:focus {
+    outline: none;
+  }
+
+  .toggle-button-line {
+    width: 30px;
+    height: 2px;
+    background: white;
+  }
+
+  .menu-container {
+    display: none;
+  }
+
+  .menu-open{
+    height: 100vh;
+    opacity: 1;
+  }
+
+  .menu-item {
+    font-size: 20px;
+  }
+}
